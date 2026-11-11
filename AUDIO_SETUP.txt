@@ -1,0 +1,22 @@
+CRUCE ESPAÑOL - PROFESSIONAL AUDIO SETUP
+
+1. Keep these files together:
+   cruce_espanol_niveles.html
+   generate_audio.bat
+   generate_audio.ps1
+   audio\   (folder)
+
+2. On a Windows computer with internet access, double-click generate_audio.bat.
+
+3. The BAT asks for your ElevenLabs API key if ELEVENLABS_API_KEY is not already set.
+   The key is used by the local script only. Do not put the key inside the HTML game.
+
+4. The script generates world themes, both boss themes, victory music, and game SFX.
+   Existing MP3 files are skipped, so rerunning the BAT resumes incomplete generation.
+
+5. After generation, open cruce_espanol_niveles.html. The game automatically uses the MP3s in audio\.
+   If an MP3 is missing, the game falls back to its built-in synthesized sound for that item.
+
+6. If you deploy the game to a website or school server, upload the HTML and the entire audio folder together without changing the folder names.
+
+NOTE: ElevenLabs generation uses account credits. The music tracks are intentionally long enough to feel professional and less repetitive, so generating the complete pack may use a meaningful amount of your monthly allowance.
